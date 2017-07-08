@@ -1,0 +1,910 @@
+body{
+	height             :4019px;
+    text-align         : center;
+	font-family        : Montserrat ,Helvetica , Arial;
+}
+
+.centreEcran{
+	margin             : auto;
+	width              :1200px;
+}
+*{
+	margin             :0;
+	padding            :0;
+ }
+ 
+a{
+	text-decoration    :none;
+	color              :#fff;
+} 
+ 
+hr{
+  	width              :35px;
+	margin             :auto;
+	margin-top         : 5px;
+	margin-bottom      : 5px;
+	border             : 1px solid #828181;
+}
+
+.hrVertical{
+	width              : 2px;
+	height             : 77px;
+	margin             : auto;
+	border             :none;
+	background-color   : #207b20;
+	/*border-color     : #207b20;
+	border-right       : 1px solid #207b20;*/
+}
+
+h1{
+	font-family        : Montserrat, Arial;
+	color              : #828181;
+	letter-spacing     : 2px;
+	font-size          : 20px;
+	padding-top        :40px;
+}
+
+h2{
+	color              : #828181;
+	font-family        : Arial;
+	font-weight        : bold;
+}
+
+h3{
+	font-family        : Montserrat, Arial;
+	color              : #828181;
+	font-size          : 12px;
+	letter-spacing     :1px;
+}
+
+h4{
+	font-family        : Montserrat, Arial;
+	color              : #207b20;
+	letter-spacing     : 2px;
+	font-size          : 20px;
+	padding-top        :40px;
+}
+
+h5{
+	font-family        : Montserrat, Arial;
+	color              : #fff;
+	font-size          : 15px;
+	margin-top         : 5px;
+}
+
+
+														/** Général **/
+	
+@font-face{
+	font-family        :"Montserrat";
+	src                : url("../fonts/Montserrat-Light.otf");
+}
+
+@font-face{
+	font-family        :"Montserrat";
+	font-weight        :bold;
+	src                : url("../fonts/Montserrat-Light.otf");
+}
+
+	
+															/** Navigation **/
+nav{	
+	width              : 100%;
+	position           : fixed;
+	height             : 37px;
+	background         : rgba(0,0,0,0.3) url(../img/switch.png) no-repeat center center;
+	/* background      : url("../img/gradientNav.png") repeat-x;	*/
+}
+
+nav ul{	
+	list-style         : none;
+	display            : flex;
+	flex-direction     : row;
+	flex-wrap          :nowrap;
+	font-size          : 13px;
+	margin             :0;
+	padding            :0;
+}
+
+nav ul li{
+	height             : 37px;
+	margin             : 0 15px;
+	border-top         : 5px solid transparent;
+	padding-top        : 4px;
+}
+
+nav ul li:last-child{
+	margin-left        :auto;
+}
+
+nav ul li:last-child:hover{
+	margin-left        :auto;
+	border-top         : 5px solid transparent;
+}
+
+nav ul li:hover{
+	border-top         : 5px solid #54d154; 
+}
+
+nav ul li input{
+	border-radius      : 20px;
+	font-family        : Arial;
+	color              : #828181;
+	padding            : 2px 25px 2px 10px;
+	border             : none;
+	background         : rgba(255,255,255,0.7) url(../img/loupe.png) no-repeat 95%;
+    outline            : none;		
+}
+
+
+															/** Header **/
+header{
+	text-align         :center;
+	width              : 100%;
+	height             : 659px;
+	background         : #000 url("../img/main.jpg") no-repeat center top;
+    background-size    : 100%;
+    background-repeat  : no-repeat;
+}
+
+header h1{
+	font-size          : 40px;
+	color              : #fff;
+	font-family        : Arial;
+	font-weight        : bold;
+	padding-top        : 270px;
+	letter-spacing     : 2px;
+}
+
+#btnWorkWithUs{
+	height             : 50px;
+	width              : 200px;	
+	margin             :auto;
+	margin-top         : 50px;
+	border-radius      : 50px;
+}
+
+#btnWorkWithUs a{
+	text-decoration    : none;
+	background-color   : #54d154;
+	padding            : 10px 25px;
+	color              : #fff;
+	font-family        : Arial;
+	border-radius      : 50px;
+}
+
+#btnWorkWithUs a:hover{
+	background-color   : #fff;
+	color              : #2b9b2b;
+}
+
+#scrollDown {
+	margin-top         : 200px;
+}
+
+#scrollDown a{
+	font-family        : Arial;
+	text-decoration    : none;
+	color              : #000;
+	font-size          : 13px;
+	background-color   : rgba(255,255,255,0.7);
+	padding            : 5px 15px;
+	border-radius      : 30px;
+}
+
+#scrollDown a:hover{
+	color              : #fff;
+	background-color   : rgba(000,000,000,0.4);
+
+}
+
+
+																/** What We Do **/
+#whatWeDo{
+	background-color   : #fff;
+	width              : 100%;
+    background-size    : 100% 100%;
+	height             : 577px;
+	/**background-image:url("../img/main_04.jpg")**/
+}
+
+#whatWeDo content{
+	display            : flex;
+	flex-direction     : row;
+	flex-wrap          : wrap;
+}
+
+#whatWeDo  article{	
+	margin             : 60px 46px;
+	width              : 300px;
+	height             : 370px;
+}
+
+#whatWeDo article div{
+	width              : 100px;
+	height             : 100px;
+	border-radius      : 30px;
+	border-color       : ##e1f3e1;
+	padding            : 20px;
+	margin             : auto;
+	margin-top         : 20px;
+	margin-bottom      : 20px;
+}
+
+#whatWeDo article p{
+	font-family        : Montserrat, Arial;
+	color              : #828181;
+	font-size          : 14px;
+	padding            : 10px 10px;
+}
+
+#icon1{
+	background         : #e1f3e1 url('../img/forma1.png') no-repeat center;
+}
+
+#icon2{
+	background         : #e1f3e1 url('../img/forma2.png') no-repeat center;
+}
+
+#icon3{
+	background         : #e1f3e1 url('../img/forma3.png') no-repeat center;
+}
+
+#whatWeDo .btnLearnMore{
+	margin-top         : 20px;
+	width              : 85px;
+	height             : 15px;
+	font-family        : Tahoma;
+	font-size          : 13px;
+	font-weight        : bold;
+	color              : #fff;
+	background-color   : #54d154;
+	border-radius      : 20px;
+	padding            : 7px 15px;
+	border             : none;
+}
+
+#whatWeDo .btnLearnMore:hover{
+	background-color   : #2b9b2b;
+}
+
+																/** Our Latest Work **/
+#ourLatestWork{
+	width              : 100%;
+    background-size    : 100% 100%;
+	height             : 748px;
+	background         : #54d154;
+}
+
+#ourLatestWork content{
+	display            : flex;
+	flex-direction     : row;
+	flex-wrap          :wrap;
+}
+
+#ourLatestWork ul{	
+	list-style         : none;
+	font-size          : 13px;
+}
+
+#menuOurLastestWork{
+	margin-top         : 60px;
+	margin-bottom      : 40px;
+}
+
+#menuOurLastestWork ul{
+	display            : flex;
+	flex-direction     : row;
+	flex-wrap          :wrap;
+	margin             : auto;
+}
+
+#menuOurLastestWork li{
+	height             : 23px;
+	padding            : 7px 15px 0 15px;
+	background-color   : #fff;
+	border             : 1px solid #2b9b2b;
+}
+
+#menuOurLastestWork li a{
+	color              : #2b9b2b;
+}
+
+#menuOurLastestWork ul li:first-child{
+	color              : #2b9b2b;
+	border-radius      : 20px 0 0 20px;
+	border-right        :none;
+}
+
+#menuOurLastestWork li:first-child a{
+}
+
+#menuOurLastestWork ul li:last-child{
+	border-left        :none;
+	border-radius      : 0 20px 20px 0;
+}
+
+#menuOurLastestWork li:last-child:hover{
+	background-color   : #2b9b2b;
+}
+
+#menuOurLastestWork li:last-child:hover a{
+	color              : #fff;
+}
+
+#menuOurLastestWork ul li:hover {
+	background-color   : #2b9b2b;
+}
+
+#menuOurLastestWork li:hover a{
+	color              : #fff;
+}
+
+#imgLastestWork{
+	width              : 950px;
+	height             : 385px;
+	margin             : auto;	
+	margin-bottom      : 50px;
+}
+
+#imgLastestWork ul{
+	width              : 950px;
+	height             : 385px;
+	display            : flex;
+	flex-direction     : row;
+	flex-wrap          :wrap;
+}
+
+#imgLastestWork ul li{
+	width              : 160px;
+	height             : 160px;
+	margin             : auto;
+}
+
+#btnViewMore{
+	margin             : auto;	
+	font-family        : Montserrat;
+	font-size          : 13px;
+	font-weight        : bold;
+	background         : #2b9b2b;
+	color              : #fff;
+	height             : 1px;
+	width              : 200px;
+	padding            : 10px 15px;
+	border-radius      :20px;
+}
+
+#btnViewMore a{
+	color              : #fff;
+}
+
+#btnViewMore:hover{
+	background         : #fff;
+	color              : #2b9b2b;
+}
+
+#btnViewMore a:hover{
+	background         : #fff;
+	color              : #2b9b2b;
+}
+
+
+																/** Testimonials **/
+#testimonials{
+	width              : 100%;
+    background-size    : 100% 100%;
+	height             : 342px;
+	background         : #fff;
+}
+
+#testimonials content{
+	display            : flex;
+	flex-direction     : row;
+	flex-wrap          :wrap;
+}
+
+#contentTestimonials{
+	width              : 1000px;
+	height             : 200px;
+}	
+#leftArrow{
+	width              : 20px;
+	height             : 200px;
+	margin             : auto;
+	background         : url('../img/arrowLeft.png') no-repeat center;
+}
+#rightArrow{
+	width              : 20px;
+	height             : 200px;
+	margin             : auto;
+	background         : url('../img/arrowRight.png') no-repeat center;
+}
+
+#testimonial{
+	margin             : auto;
+	margin-top         : 70px;
+}
+#textTestimonial{
+	width              : 500px;
+	height             : 60px;
+}
+
+#textTestimonial p{
+	font-family        : Montserrat;
+	font-size          : 14px;
+	font-weight        : bold;
+}
+
+#idAuthor{
+	width              : 200px;
+	height             : 100px;
+	display            :flex;
+	flex-direction     : row;
+	flex-wrap          :wrap;
+	margin             : auto;
+}
+
+#idAuthor div{
+	margin             : auto;
+}
+
+#photoAuthor{
+	width              : 46px;
+	height             : 46px;
+	border             : 2px solid #e2e2e2;
+	border-radius      :25px;
+}
+
+#photoAuthor img{
+	padding-top        : 5px;
+}
+
+#descriptionAuthor{
+	text-align         :left;
+	font-family        : Montserrat;
+}
+#jobAuthor{
+	font-weight        : bold;
+	color              : #cccccc;
+}
+
+
+																/** Our Happy Client **/
+#ourHappyClient{
+	width              : 100%;
+    background-size    : 100% 100%;
+	height             : 497px;
+	background-color   : #f2f1f1;
+}
+
+#ourHappyClient content{
+	display            : flex;
+	flex-direction     : row;
+	flex-wrap          :wrap;
+}
+
+#ourHappyClient ul{	
+	list-style         : none;
+}
+
+#imgHappyClient{
+	width              : 1050px;
+	height             : 300px;
+	margin             : auto;	
+	margin-top         :20px;
+	margin-bottom      :10px;
+}
+
+#imgHappyClient ul{
+	width              : 1250px;
+	height             : 300px;
+	display            : flex;
+	flex-direction     : row;
+	flex-wrap          :wrap;
+}
+
+#imgHappyClient ul li{
+	width              : 250px;
+	margin             : auto;
+}
+
+#btnSeeAllClient{
+	margin             : auto;	
+	font-family        : Montserrat;
+	font-size          : 13px;
+	font-weight        : bold;
+	background         : #dddcdc;
+	color              : #828181;
+	height             : 1px;
+	width              : 200px;
+	padding            : 10px 15px;
+	border-radius      :20px;
+}
+
+#btnSeeAllClient a{
+	color              : #fff;
+}
+
+#btnSeeAllClient:hover{
+	background         : #2b9b2b;
+	color              : #fff;
+}
+
+#btnSeeAllClient a:hover{
+	background         : #2b9b2b;
+	color              : #fff;
+}
+
+
+																/** Meet The Team **/
+#meetTheTeam{
+	width              : 100%;
+    background-size    : 100% 100%;
+	height             : 482px;
+	background-color   : #54d154;	
+}
+
+#meetTheTeam content {
+	display            : flex;
+	flex-direction     : row;
+	flex-wrap          :wrap;
+	width              : 900px;
+}
+
+#meetTheTeam content article{	
+	margin             : 50px 0;
+	width              : 180px;
+	height             : 300px;
+}
+
+#meetTheTeam content article div{
+	padding            : 0 0 5px;
+	margin             : auto;
+}
+
+#meetTheTeam .socialMedia {
+	width              : 86px;
+	height             : 24px;
+	background-color   : #cccccc;
+	margin-top         : 15px;
+	border-radius      :25px;
+}
+
+.socialMedia{
+	display            : flex;
+	flex-direction     : row;
+	flex-wrap          :wrap;
+	width              : 900px;
+}
+
+.socialMedia a {
+	margin             : auto;
+	margin-top         : 4px;
+}
+
+
+																/** Work with us **/
+#workWithUs{
+	width              : 100%;
+    background-size    : 100% 100%;
+	height             : 92px;
+	background-color   : #3eba3e;
+}
+
+#workWithUs div{
+	height             : 50px;
+	width              : 200px;	
+	margin             :auto;
+	padding-top        : 37px;
+	border-radius      : 50px;
+}
+
+#workWithUs div a{
+	text-decoration    : none;
+	background-color   : #54d154;
+	padding            : 10px 25px;
+	color              : #fff;
+	font-family        : Arial;
+	border-radius      : 50px;
+	box-shadow         : 0 2px 5px 1px rgba(0, 0, 0, 0.1); 	
+}
+
+#workWithUs div a:hover{
+	background-color   : #fff;
+	color              : #2b9b2b;	
+}
+
+
+																/** Abous Us **/
+#aboutUs{
+	width              : 100%;
+    background-size    : 100% 100%;
+	height             : 439px;
+	background-color   : #333333;
+}
+#aboutUs content{
+	display            : flex;
+	flex-direction     : row;
+	flex-wrap          :wrap;
+	width              : 1230px;
+}
+#aboutUs content article{
+	width              : 330px;
+	margin             : 0 40px;
+}
+#aboutUs content article div h4{
+	color              : #dddddd;
+	letter-spacing     : 4px;
+	font-size          : 16px;
+	padding-top        : 30px;
+}
+
+#aboutUs content article div hr{
+	color              : #dddddd;
+	border             : 1px solid #dddddd;
+}
+
+#aboutUs content article div p{
+	color              : #a6a6a6;
+	letter-spacing     : 1px;
+	font-size          : 14px;
+	font-family        : Montserrat;
+	margin-top         : 25px;
+}
+
+#aboutUs .socialMedia {
+	width              : 86px;
+	height             : 24px;
+	background-color   : #cccccc;
+	margin             : auto;
+	padding            : 1px 0 4px 0;
+	margin-top         : 30px;
+	border-radius      :25px;
+}
+
+#aboutUs content article div span{
+	width              : 330px;
+}
+
+#aboutUs content article #infoContact{
+	display            : flex;
+	flex-direction     : row;
+	margin-top         : 20px;
+	letter-spacing     : 0.05em;
+	flex-wrap          :wrap;	
+	color              : #a6a6a6;
+	font-size          : 12px;
+	font-family        : Montserrat;
+}
+
+#aboutUs content article #formContact {
+	margin-top         : 20px;
+	margin-left        : 20px;
+}
+
+#aboutUs content article #formContact input{
+	display            : flex;
+	flex-direction     : row;
+	flex-wrap          :wrap;	
+	outline            : none;
+	width              : 294px;
+	border             :none;
+	font-size          : 12px;
+	margin             : 2px 0;
+	height             : 26px;
+	color              : #a6a6a6;
+	background-color   : #444444;
+	padding            :0 10px;	
+}
+
+#aboutUs content article #formContact input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color: #777777;
+}
+
+#aboutUs content article #formContact input:first-child{
+	border-radius: 4px 4px 0 0;
+}
+
+#aboutUs content article #formContact input:last-child{
+	border-radius: 0 0 4px 4px;
+}
+
+#aboutUs content article #formContact #idTextArea{
+	margin: 0;
+}
+
+#aboutUs content article textarea{
+	outline         : none;
+	border          :none;
+	background-color: #444444;
+	padding         : 5px 7px 0 10px;
+	margin-bottom   : 0;
+	color           : #a6a6a6;
+	resize          : none;
+}
+
+#aboutUs content article textarea::-webkit-scrollbar{
+	background-color: #a6a6a6;
+}
+
+#aboutUs content article textarea::-webkit-scrollbar-button{
+	background-color: #3a3a3a;
+}
+
+#aboutUs content article textarea::-webkit-scrollbar-track-piece{
+	background-color: #464646;
+}
+
+#aboutUs content article textarea::-webkit-scrollbar-thumb{
+	background-color: #2b9b2b;
+} 
+
+#aboutUs content article #formContact textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color      : #777777;
+	font-size  : 12px;
+	font-family: Arial;
+}
+
+#aboutUs content article #formContact #btnSend{
+	background-color: #2b9b2b;
+	margin          : 0;
+	color           : #fff;
+	font-size       : 12px;
+	padding-left    :140px;	
+	width           : 314px;
+}
+
+#aboutUs content article #formContact #btnSend:hover{
+	background-color: #fff;
+	color           : #2b9b2b;
+}
+
+#recentPosts{
+	width          : 100%;
+    background-size: 100% 100%;
+	height         : 350px;
+	margin-top     :15px;
+}
+
+#recentPosts ul{	
+	display        : flex;
+	flex-direction : row;
+	flex-wrap      :wrap;
+	list-style     : none;
+	margin-top     :5px;
+}
+
+#recentPosts ul li:first-child{	
+	width          : 60px;
+	height         : 60px;
+}
+
+#aboutUs content article div .titrePost{
+	margin          : 6px 0 0 3px;
+}
+
+
+.magazine{
+	width           : 64px;
+	background-color: #54d154;
+	color           : #fff;
+	font-size       : 12px;
+	border-radius   : 2px;
+	padding         : 3px 5px;
+	text-align      : left;
+	margin-left     : 4px;
+}
+
+.uiDesign {
+	width           : 64px;
+	background-color: #ffcb40;
+	color           : #fff;
+	font-size       : 12px;
+	border-radius   : 2px;
+	padding         : 3px 5px;
+	text-align      : left;
+	margin-left     : 4px;
+}
+
+.book {
+	width           : 37px;
+	background-color: #f34d04;
+	color           : #fff;
+	font-size       : 12px;
+	border-radius   : 2px;
+	padding         : 3px 5px;
+	text-align      : left;
+	margin-left     : 4px;
+}
+
+.photography {
+	width           : 94px;
+	background-color: #089dea;
+	color           : #fff;
+	font-size       : 12px;
+	border-radius   : 2px;
+	padding         : 3px 5px;
+	text-align      : left;
+	margin-left     : 4px;
+}
+ 														/** Paternships **/
+#paternships{
+	width           : 100%;
+    background-size : 100% 100%;
+	height          : 148px;
+	background-color: #222222;
+}
+
+#paternships div{
+	width           :100%;
+	height          :30px;
+	background-color: #222222;
+}
+
+#paternships div p {
+	font-family     : Montserrat, Arial;
+	color           : #000;
+	letter-spacing  : 2px;
+	font-size       : 20px;
+	padding-top     :20px;
+}
+
+#paternships div hr{
+  	width           :35px;
+	margin          :auto;
+	margin-top      : 5px;
+	margin-bottom   : 5px;
+	border          : 1px solid #000;
+}
+
+#paternships content{
+	display         : flex;
+	flex-direction  : row;
+	flex-wrap       :wrap;
+}
+
+#paternships ul{	
+	list-style      : none;
+}
+
+#imgAsSeenOn{
+	width           : 1150px;
+	height          : 100px;
+	margin          : auto;	
+	margin-top      :20px;
+	margin-bottom   :10px;
+}
+
+#imgAsSeenOn ul{
+	width           : 1000px;
+	height          : 100px;
+	display         : flex;
+	flex-direction  : row;
+	flex-wrap       :wrap;
+}
+
+#imgAsSeenOn ul li{
+	width           : 200px;
+	margin          : auto;
+}
+
+
+																/** Copyright **/
+#copyright{
+	width           : 100%;
+    background-size : 100% 100%;
+	height          : 35px;
+	background-color: #111111;
+	color           : #fff;
+}
+
+#copyright p{
+	margin          : auto;
+	padding-top     : 6px;
+	font-family     : Montserrat;
+	font-size       : 14px;
+	letter-spacing  : 1px;
+}
+#whiteHeart{
+	color           : #fff;
+}

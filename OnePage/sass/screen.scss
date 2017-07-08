@@ -1,0 +1,372 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+@charset "utf-8";
+
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
+	$src: null;
+
+	$extmods: (
+		eot: "?",
+		svg: "#" + str-replace($name, " ", "_")
+	);
+
+	$formats: (
+		otf: "opentype",
+		ttf: "truetype"
+	);
+
+	@each $ext in $exts {
+		$extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+		$format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+		$src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+	}
+
+	@font-face {
+		font-family: quote($name);
+		font-style: $style;
+		font-weight: $weight;
+		src: $src;
+	}
+}
+
+@include font-face("Bebas Neue Regular", "../fonts/BebasNeue Regular", null, null, otf);
+@include font-face("Raleway Regular", "../fonts/Raleway-Regular", null, null, ttf);
+
+body {
+	padding-top: 50px;
+	height: 2836px;
+	overflow-x: hidden;
+}
+
+.content{
+    width: 1280px; 
+    height: auto;
+    margin: auto;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+/***************************************** 
+*			  	  navbar       	 	     * 
+******************************************/
+
+
+.navbar{
+	background-color: #353434;
+}
+
+.navbar-inverse{
+	border-color: transparent;
+}
+
+.navbar-brand img{
+	padding: 8px 30px 8px 100px;
+	border-right: 1px solid #404040;
+}
+
+#navbar ul.navbar-nav li{
+	padding: 18px 0;
+	font-family: "Raleway Regular";
+	font-size: 12px;
+	height: 80px;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+	color: #fff;
+    -webkit-transition: color 0.5s; /* Safari 3.1 to 6.0 */
+    transition: color 0.5s;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover{
+	color: #00c5ff;
+}
+
+.social{
+	float:right;
+}
+
+#navbar ul.social li a{
+	padding: 11px 0;
+	margin: 3px 7px 0 7px;
+	color: #fff;
+	height: 40px;
+	width: 40px;
+	border: 2px solid #fff;
+    -webkit-transition: border 0.5s; /* Safari 3.1 to 6.0 */
+    transition: border 0.5s;
+}
+
+#navbar ul.social li a:hover{
+	border: 2px solid #00c5ff;
+
+}
+
+#navbar ul.social li img{
+	margin-left: 12px;
+}
+
+#navbar ul.social li:last-child img{
+	margin-left: 14px;
+}
+/***************************************** 
+*			  	  slider       	 	     * 
+******************************************/
+
+#slider{
+	width: 100%;
+	height: 580px;
+	background-image: url('../img/Layer 5.png');
+    background-size: 100%;
+    background-positon: center; 
+    background-color: #000;
+}
+
+#sliderDesc{
+	padding: 250px 0 0 700px;
+}
+
+#sliderDesc p:first-child{
+	width: 325px;
+	height: 50px;
+	background-color: rgba(255,255,255,0.3);
+	margin-bottom:5px;
+	text-transform: uppercase;
+	font-family: "Raleway Regular";
+	font-size: 26px;
+	padding: 13px 0 0 15px;
+}
+
+#sliderDesc p:last-child{
+	width: 445px;
+	height: 50px;
+	background-color: rgba(255,255,255,0.3);
+	margin-bottom:5px;
+	text-transform: uppercase;
+	font-family: "Raleway Regular";
+	font-size: 26px;
+	padding: 13px 0 0 15px;
+}
+/***************************************** 
+*			     Features        	     * 
+******************************************/
+
+#features{
+	width: 100%;
+	height: 546px;
+	background-color: #f7f7f7;
+}
+
+#features ul{
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+	height: 140px;
+	padding: 130px 0 0 110px;
+}
+
+#features ul li{
+	display: flex;
+	flex-flow: row wrap;
+	font-family: "Raleway Regular";
+	font-size: 14px;
+	width: 367px;
+	height: 140px;
+	margin-bottom: 35px;
+}
+
+#features ul li p{
+	margin-bottom: 5px;
+}
+
+#features ul li div:first-child{
+	width: 50px;
+	height: 50px;
+	margin-right: 40px;
+    border-radius: 50px;
+    background-color: #65bf95;
+    -webkit-transition: background-color 0.7s; /* Safari 3.1 to 6.0 */
+    transition: background-color 0.7s;
+}
+
+#features ul li div:last-child{
+	width: 200px;
+	height: 100%;
+}
+
+#features ul li div:first-child:hover{
+	background-color: #00c5ff;
+}
+
+#features ul li div img{
+	width: 40px;
+	height: 40px;
+	padding: 10px 0 0 10px;
+}
+
+
+#features ul li div a{
+	color: #767676;
+	font-weight: bold;
+}
+/***************************************** 
+*			   Testimonials       	     * 
+******************************************/
+
+
+#testimonials{
+	width: 100%;
+	height: 472px;
+	background-color: #fff;
+	text-align: center;
+}
+
+#testimonials h4{
+	text-transform: uppercase;
+	font-family: "Raleway Regular";
+	font-size: 24px;
+	color: #767676;
+	margin-top: 180px;
+}
+
+#testimonials p{
+	font-family: "Raleway Regular";
+	font-size: 15px;
+	color: #6b6b6b;
+	text-align: center;
+	margin: 60px 230px 60px 230px;
+	line-height: 25px;
+}
+
+.author{
+	font-family: "Raleway Regular";
+	font-size: 15px;
+	font-weight: bold;
+	color: #6b6b6b;
+	text-align: center;
+}
+/***************************************** 
+*			   	  About         	     * 
+******************************************/
+
+
+#about{
+	width: 100%;
+	height: 406px;
+	display: flex;
+	flex-flow: row wrap;
+	background-color: #3b3b3b;
+}
+
+#imgAbout{
+	width: 50%;
+	height: 406px;
+	background-image: url('../img/Layer 4.png');
+}
+
+#aboutDesc{
+	width: 50%;
+	height: 406px;
+	color: #fff;
+	padding: 80px 30px 0 30px;
+}
+
+#aboutDesc h1{
+	text-transform: uppercase;
+	font-family: "Bebas Neue Regular";
+	font-size: 28px;
+	letter-spacing: 4px;
+	color: #fff;
+	margin-bottom: 50px;	
+}
+
+#aboutDesc p{
+	font-family: "Raleway Regular";
+	font-size: 12px;
+	letter-spacing: 1px;
+	color: #fff;
+	line-height: 26px;
+	margin-bottom: 30px;	
+}
+
+#aboutDesc a{
+	font-family: "Raleway Regular";
+	font-size: 12px;
+	color: #fff;	
+}
+
+/***************************************** 
+*			  Call To Action       	     * 
+******************************************/
+
+
+#callToAction{
+	width: 100%;
+	height: 377px;
+	background-color: #fff;
+}
+
+#callToAction h1{
+	text-transform: uppercase;
+	font-family: "Raleway Regular";
+	font-size: 28px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	color: #6b6b6b;
+	margin-bottom: 30px;
+	text-align: center;
+	margin-top: 100px;	
+}
+
+#callToAction p{
+	font-family: "Raleway Regular";
+	font-size: 15px;
+	color: #6b6b6b;
+	text-align: center;
+	margin-bottom: 80px;
+}
+
+#callToAction button{
+	text-transform: uppercase;
+	font-family: "Raleway Regular";
+	font-size: 20px;
+	color: #fff;
+	display: block;
+	margin: auto;
+	border: none;
+	height: 55px;
+	width: 260px;
+	background-color: #65bf95;
+	text-align: center;
+    -webkit-transition: background-color 0.7s; /* Safari 3.1 to 6.0 */
+    transition: background-color 0.7s;
+}
+
+#callToAction button:hover{
+	background-color: #00c5ff;
+}
+/***************************************** 
+*			 	 Footer          	     * 
+******************************************/
+
+footer{
+	width: 100%;
+	font-family: "Raleway Regular";
+	background-color : #f7f7f7;
+	color: #000;
+	height : 276px;
+	text-align:center;
+	bottom: 0;
+	position: relative;
+}
+
+footer img{
+	margin: 100px 0 0 0;
+}
+footer p{
+	margin: 25px 0;
+}

@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+div{	
+	width:100%;
+	font-family: "Raleway Regular";
+	font-size: 14px;
+		
+	>ul.wrap {
+		display: flex;
+		-webkit-display: flex;
+		-moz-display: flex;
+		-o-display: flex;
+		-ms-display: flex;
+		flex-flow: row wrap;
+		-webkit-flex-flow: row wrap;
+		-moz-flex-flow: row wrap;
+		-o-flex-flow: row wrap;
+		-ms-flex-flow: row wrap;
+	
+		width: 600px;
+		margin: auto;
+		height: 100px;
+		justify-content: space-between;
+		// justify-content: flex-end; // Coller le contenu à droite ( float: right;)
+		align-items: center;
+	}
+}
+
+li{
+	list-style: none;
+	padding: 10px;
+	margin: 0 50px 0 0;
+	color: white;
+	background: red;
+	
+	&:nth-child(2){
+		background: purple;
+	}
+
+	&:nth-child(3){
+		background: orange;
+	}
+
+	&:nth-child(4){
+		background: green;
+	}
+
+	&:nth-child(5){
+		background: tomato;
+		margin: 0;
+	}
+}
+
+section.container{
+	width: 100vw; // vw : L'unité de longueur CSS vw est relative à la largeur du bloc conteneur initial. vw est égale à 1% de cette dernière.
+	margin: 0;
+	padding: 0;
+	display: flex;
+	-moz-display: flex;
+	flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	flex-direction: row;
+	-moz-flex-direction: row;
+
+	>.zone{
+		width:33.3vw;
+		height: 200px;
+		min-width: 320px;
+		min-height: 200px;
+		background: khaki;
+		flex:1; // Remplie l'espace vide
+		overflow: auto;
+		padding: 20px;
+		border-sizing: bordex-box;
+
+		>p{
+			font-family:"Raleway Regular";
+			display: flex;
+			flex-wrap: wrap;
+		
+			>span{
+				margin: 10px;
+			}
+		}
+		
+		&:nth-child(2){
+			background: orange;
+		}
+		
+		&:nth-child(3){
+			background: orangered;
+		}
+	}
+}

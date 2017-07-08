@@ -1,0 +1,152 @@
+@charset "utf-8";
+
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
+	$src: null;
+
+	$extmods: (
+		eot: "?",
+		svg: "#" + str-replace($name, " ", "_")
+	);
+
+	$formats: (
+		otf: "opentype",
+		ttf: "truetype"
+	);
+
+	@each $ext in $exts {
+		$extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+		$format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+		$src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+	}
+
+	@font-face {
+		font-family: quote($name);
+		font-style: $style;
+		font-weight: $weight;
+		src: $src;
+	}
+}
+
+@include font-face("Bebas Neue Regular", "../fonts/BebasNeue Regular", null, null, otf);
+@include font-face("Raleway Regular", "../fonts/Raleway-Regular", null, null, ttf);
+
+body {
+	padding-top: 50px;
+	overflow-x: hidden;
+}
+
+p{
+	margin:0;
+	padding:0;
+}
+
+.starter-template {
+	padding: 40px 15px;
+    margin: 100px 0 0 0; 
+	text-align: none;    
+    bottom:0px;
+    width:4000px;
+    float:left;
+    height: 100%;
+    text-shadow:1px 1px 2px #f0f0f0;
+}
+
+#j1, #j2, #j3, #j4, #j5{
+	height:700px;
+	float: left;
+}
+
+#navbar ul{
+	float: right;
+}
+
+.starter-template h1, p.date, ol{
+	margin-left: 50px;
+}
+
+.starter-template ol li p{
+	margin-left: 10px;
+}
+nav{
+	font-family: "Raleway Regular";
+}
+
+#title{
+	width:4000px;
+	height: 150px;
+	background-color: #fff;	
+}
+
+#title h1{
+	position : fixed;
+	padding: 10px 0 0 30px;
+	font-family: "Bebas Neue Regular";
+	font-size: 36px;  
+	margin-top: 20px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+.date{
+	color: #00c5ff;
+	margin: 5px 0 0 0;
+}
+
+.content{
+    width:20000px;
+    position:absolute;
+    top:0px;
+    left:0px;
+    bottom:0px;  
+}
+
+.content h1{
+	font-family: "Bebas Neue Regular";
+}
+
+.content ol li{
+	list-style: decimal;
+	font-family: "Raleway Regular";
+}
+
+.content h4{
+	font-family: "Bebas Neue Regular";
+	padding-top: 25px;
+}
+
+button.btnRetour{
+			margin: 125px 0 0 15px;
+			background-color: #333;
+			border:none;
+			color: #fff;
+			height: 30px;
+			width: 130px;
+			font-family: "Raleway Regular";
+			letter-spacing: 1px;
+			-webkit-transition: color 0.5s; /* Safari 3.1 to 6.0 */
+			transition: color 0.5s;	
+			-webkit-transition: background-color 0.5s; /* Safari 3.1 to 6.0 */
+			transition: background-color 0.5s;	
+			-webkit-transition: color 0.5s; /* Safari 3.1 to 6.0 */
+			transition: color 0.5s;	
+			
+			&:hover{
+				background-color: #00c5ff;
+				color: #000;
+				}
+		}
+
+footer{
+	width: 100%;
+	font-family: "Raleway Regular";
+	background-color : rgba(33,38,41, 0.9);
+	color: #fff;
+	height : 46px;
+	text-align:center;
+	padding-top: 13px;
+	bottom: 0;
+	position: fixed;
+}
+
+footer p{
+	color: #fff;
+}

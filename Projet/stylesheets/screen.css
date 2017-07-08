@@ -1,0 +1,199 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: "Bebas Neue Regular";
+  src: url("../fonts/BebasNeue Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Raleway Regular";
+  src: url("../fonts/Raleway-Regular.ttf") format("truetype");
+}
+/* line 33, ../sass/_global.scss */
+body {
+  padding-top: 50px;
+  overflow-x: hidden;
+}
+
+/* line 38, ../sass/_global.scss */
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 43, ../sass/_global.scss */
+.starter-template {
+  padding: 40px 15px;
+  margin: 100px 0 0 0;
+  text-align: none;
+  bottom: 0px;
+  width: 4000px;
+  float: left;
+  height: 100%;
+  text-shadow: 1px 1px 2px #f0f0f0;
+}
+
+/* line 54, ../sass/_global.scss */
+#j1, #j2, #j3, #j4, #j5 {
+  height: 700px;
+  float: left;
+}
+
+/* line 59, ../sass/_global.scss */
+#navbar ul {
+  float: right;
+}
+
+/* line 63, ../sass/_global.scss */
+.starter-template h1, p.date, ol {
+  margin-left: 50px;
+}
+
+/* line 67, ../sass/_global.scss */
+.starter-template ol li p {
+  margin-left: 10px;
+}
+
+/* line 70, ../sass/_global.scss */
+nav {
+  font-family: "Raleway Regular";
+}
+
+/* line 74, ../sass/_global.scss */
+#title {
+  width: 4000px;
+  height: 150px;
+  background-color: #fff;
+}
+
+/* line 80, ../sass/_global.scss */
+#title h1 {
+  position: fixed;
+  padding: 10px 0 0 30px;
+  font-family: "Bebas Neue Regular";
+}
+
+/* line 85, ../sass/_global.scss */
+.date {
+  color: #00c5ff;
+  margin: 5px 0 0 0;
+}
+
+/* line 90, ../sass/_global.scss */
+.content {
+  width: 24000px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+}
+
+/* line 98, ../sass/_global.scss */
+.content h1 {
+  font-family: "Bebas Neue Regular";
+}
+
+/* line 102, ../sass/_global.scss */
+.content ol li {
+  list-style: decimal;
+  font-family: "Raleway Regular";
+}
+
+/* line 107, ../sass/_global.scss */
+.content h4 {
+  font-family: "Bebas Neue Regular";
+  padding-top: 25px;
+}
+
+/* line 113, ../sass/_global.scss */
+footer {
+  width: 100%;
+  font-family: "Raleway Regular";
+  background-color: rgba(33, 38, 41, 0.9);
+  color: #fff;
+  height: 46px;
+  text-align: center;
+  padding-top: 13px;
+  bottom: 0;
+  position: fixed;
+}
+
+/* line 125, ../sass/_global.scss */
+footer p {
+  color: #fff;
+}
+
+/* line 128, ../sass/_global.scss */
+#title {
+  z-index: 1000;
+  position: fixed;
+  height: 100px;
+}
+
+/*# sourceMappingURL=screen.css.map */

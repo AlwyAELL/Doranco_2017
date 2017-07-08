@@ -1,0 +1,109 @@
+@font-face {
+  font-family: "Bebas Neue Regular";
+  src: url("../fonts/BebasNeue Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Raleway Regular";
+  src: url("../fonts/Raleway-Regular.ttf") format("truetype");
+}
+/* line 33, ../sass/general.scss */
+body {
+  padding-top: 50px;
+  overflow-x: hidden;
+}
+
+/* line 38, ../sass/general.scss */
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 43, ../sass/general.scss */
+.starter-template {
+  padding: 40px 15px;
+  margin: 100px 0 0 0;
+  text-align: none;
+  bottom: 0px;
+  width: 4000px;
+  float: left;
+  height: 100%;
+  text-shadow: 1px 1px 2px #f0f0f0;
+}
+
+/* line 54, ../sass/general.scss */
+#j1, #j2, #j3, #j4, #j5 {
+  height: 700px;
+  float: left;
+}
+
+/* line 59, ../sass/general.scss */
+#navbar ul {
+  float: right;
+}
+
+/* line 63, ../sass/general.scss */
+.starter-template h1, p.date, ol {
+  margin-left: 50px;
+}
+
+/* line 67, ../sass/general.scss */
+nav {
+  font-family: "Raleway Regular";
+}
+
+/* line 71, ../sass/general.scss */
+#title h1 {
+  padding: 10px 0 0 30px;
+  font-family: "Bebas Neue Regular";
+}
+
+/* line 75, ../sass/general.scss */
+.date {
+  color: #00c5ff;
+  margin: 5px 0 20px 0;
+}
+
+/* line 80, ../sass/general.scss */
+.content {
+  width: 20000px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+}
+
+/* line 88, ../sass/general.scss */
+.content h1 {
+  font-family: "Bebas Neue Regular";
+}
+
+/* line 92, ../sass/general.scss */
+.content ol li {
+  list-style: decimal;
+  font-family: "Raleway Regular";
+}
+
+/* line 97, ../sass/general.scss */
+.content h4 {
+  font-family: "Bebas Neue Regular";
+}
+
+/* line 101, ../sass/general.scss */
+footer {
+  width: 100%;
+  font-family: "Raleway Regular";
+  background-color: rgba(33, 38, 41, 0.9);
+  color: #fff;
+  height: 46px;
+  text-align: center;
+  padding-top: 13px;
+  bottom: 0;
+  position: fixed;
+}
+
+/* line 113, ../sass/general.scss */
+footer p {
+  color: #fff;
+}
+
+/*# sourceMappingURL=general.css.map */

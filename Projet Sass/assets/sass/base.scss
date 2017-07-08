@@ -1,0 +1,30 @@
+@mixin keyframes($bouge){
+	@keyframes #{$bouge}{
+		@content;
+	}
+	
+	@-moz-keyframes #{$bouge}{
+		@content;
+	}
+}
+
+@mixin center(){
+	display: $brick;
+	margin-left: $centre;
+	margin-right: $centre;
+	height: $taille;
+	width: $taille;
+	background-color: $bleu_emeraude;
+}
+
+@mixin smart(){
+	height: $taille;
+	width: $mall;
+	background-color: purple;
+}
+
+
+$normal: linear;
+$toujours: infinite;
+$a_la_fin: forwards;
+$cest_bon_on_a_compris: 2;	

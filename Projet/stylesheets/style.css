@@ -1,0 +1,55 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@font-face {
+  font-family: "Bebas Neue Regular";
+  src: url("../fonts/BebasNeue Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Raleway Regular";
+  src: url("../fonts/Raleway-Regular.ttf") format("truetype");
+}
+/* line 38, ../sass/style.scss */
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
+  background-color: transparent;
+  color: #00c5ff;
+}
+
+/* line 43, ../sass/style.scss */
+.navbar-inverse .navbar-nav > li > a {
+  -webkit-transition: border 0.5s;
+  /* Safari 3.1 to 6.0 */
+  transition: border 0.5s;
+}
+
+/* line 48, ../sass/style.scss */
+.navbar-inverse .navbar-nav > li:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 5px;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+
+/* line 57, ../sass/style.scss */
+.navbar-inverse .navbar-nav > li:hover:after {
+  width: 100%;
+  background: #00c5ff;
+}
+
+/* line 61, ../sass/style.scss */
+.navbar {
+  border: none;
+}
+
+/* line 64, ../sass/style.scss */
+#title {
+  z-index: 1000;
+  position: fixed;
+  height: 100px;
+}
+
+/*# sourceMappingURL=style.css.map */

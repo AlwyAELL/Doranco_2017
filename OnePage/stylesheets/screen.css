@@ -1,0 +1,451 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: "Bebas Neue Regular";
+  src: url("../fonts/BebasNeue Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Raleway Regular";
+  src: url("../fonts/Raleway-Regular.ttf") format("truetype");
+}
+/* line 40, ../sass/screen.scss */
+body {
+  padding-top: 50px;
+  height: 2836px;
+  overflow-x: hidden;
+}
+
+/* line 46, ../sass/screen.scss */
+.content {
+  width: 1280px;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/***************************************** 
+*			  	  navbar       	 	     * 
+******************************************/
+/* line 59, ../sass/screen.scss */
+.navbar {
+  background-color: #353434;
+}
+
+/* line 63, ../sass/screen.scss */
+.navbar-inverse {
+  border-color: transparent;
+}
+
+/* line 67, ../sass/screen.scss */
+.navbar-brand img {
+  padding: 8px 30px 8px 100px;
+  border-right: 1px solid #404040;
+}
+
+/* line 72, ../sass/screen.scss */
+#navbar ul.navbar-nav li {
+  padding: 18px 0;
+  font-family: "Raleway Regular";
+  font-size: 12px;
+  height: 80px;
+}
+
+/* line 79, ../sass/screen.scss */
+.navbar-inverse .navbar-nav > li > a {
+  color: #fff;
+  -webkit-transition: color 0.5s;
+  /* Safari 3.1 to 6.0 */
+  transition: color 0.5s;
+}
+
+/* line 85, ../sass/screen.scss */
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: #00c5ff;
+}
+
+/* line 89, ../sass/screen.scss */
+.social {
+  float: right;
+}
+
+/* line 93, ../sass/screen.scss */
+#navbar ul.social li a {
+  padding: 11px 0;
+  margin: 3px 7px 0 7px;
+  color: #fff;
+  height: 40px;
+  width: 40px;
+  border: 2px solid #fff;
+  -webkit-transition: border 0.5s;
+  /* Safari 3.1 to 6.0 */
+  transition: border 0.5s;
+}
+
+/* line 104, ../sass/screen.scss */
+#navbar ul.social li a:hover {
+  border: 2px solid #00c5ff;
+}
+
+/* line 109, ../sass/screen.scss */
+#navbar ul.social li img {
+  margin-left: 12px;
+}
+
+/* line 113, ../sass/screen.scss */
+#navbar ul.social li:last-child img {
+  margin-left: 14px;
+}
+
+/***************************************** 
+*			  	  slider       	 	     * 
+******************************************/
+/* line 120, ../sass/screen.scss */
+#slider {
+  width: 100%;
+  height: 580px;
+  background-image: url("../img/Layer 5.png");
+  background-size: 100%;
+  background-positon: center;
+  background-color: #000;
+}
+
+/* line 129, ../sass/screen.scss */
+#sliderDesc {
+  padding: 250px 0 0 700px;
+}
+
+/* line 133, ../sass/screen.scss */
+#sliderDesc p:first-child {
+  width: 325px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-family: "Raleway Regular";
+  font-size: 26px;
+  padding: 13px 0 0 15px;
+}
+
+/* line 144, ../sass/screen.scss */
+#sliderDesc p:last-child {
+  width: 445px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-family: "Raleway Regular";
+  font-size: 26px;
+  padding: 13px 0 0 15px;
+}
+
+/***************************************** 
+*			     Features        	     * 
+******************************************/
+/* line 158, ../sass/screen.scss */
+#features {
+  width: 100%;
+  height: 546px;
+  background-color: #f7f7f7;
+}
+
+/* line 164, ../sass/screen.scss */
+#features ul {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  height: 140px;
+  padding: 130px 0 0 110px;
+}
+
+/* line 172, ../sass/screen.scss */
+#features ul li {
+  display: flex;
+  flex-flow: row wrap;
+  font-family: "Raleway Regular";
+  font-size: 14px;
+  width: 367px;
+  height: 140px;
+  margin-bottom: 35px;
+}
+
+/* line 182, ../sass/screen.scss */
+#features ul li p {
+  margin-bottom: 5px;
+}
+
+/* line 186, ../sass/screen.scss */
+#features ul li div:first-child {
+  width: 50px;
+  height: 50px;
+  margin-right: 40px;
+  border-radius: 50px;
+  background-color: #65bf95;
+  -webkit-transition: background-color 0.7s;
+  /* Safari 3.1 to 6.0 */
+  transition: background-color 0.7s;
+}
+
+/* line 196, ../sass/screen.scss */
+#features ul li div:last-child {
+  width: 200px;
+  height: 100%;
+}
+
+/* line 201, ../sass/screen.scss */
+#features ul li div:first-child:hover {
+  background-color: #00c5ff;
+}
+
+/* line 205, ../sass/screen.scss */
+#features ul li div img {
+  width: 40px;
+  height: 40px;
+  padding: 10px 0 0 10px;
+}
+
+/* line 212, ../sass/screen.scss */
+#features ul li div a {
+  color: #767676;
+  font-weight: bold;
+}
+
+/***************************************** 
+*			   Testimonials       	     * 
+******************************************/
+/* line 221, ../sass/screen.scss */
+#testimonials {
+  width: 100%;
+  height: 472px;
+  background-color: #fff;
+  text-align: center;
+}
+
+/* line 228, ../sass/screen.scss */
+#testimonials h4 {
+  text-transform: uppercase;
+  font-family: "Raleway Regular";
+  font-size: 24px;
+  color: #767676;
+  margin-top: 180px;
+}
+
+/* line 236, ../sass/screen.scss */
+#testimonials p {
+  font-family: "Raleway Regular";
+  font-size: 15px;
+  color: #6b6b6b;
+  text-align: center;
+  margin: 60px 230px 60px 230px;
+  line-height: 25px;
+}
+
+/* line 245, ../sass/screen.scss */
+.author {
+  font-family: "Raleway Regular";
+  font-size: 15px;
+  font-weight: bold;
+  color: #6b6b6b;
+  text-align: center;
+}
+
+/***************************************** 
+*			   	  About         	     * 
+******************************************/
+/* line 257, ../sass/screen.scss */
+#about {
+  width: 100%;
+  height: 406px;
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #3b3b3b;
+}
+
+/* line 265, ../sass/screen.scss */
+#imgAbout {
+  width: 50%;
+  height: 406px;
+  background-image: url("../img/Layer 4.png");
+}
+
+/* line 271, ../sass/screen.scss */
+#aboutDesc {
+  width: 50%;
+  height: 406px;
+  color: #fff;
+  padding: 80px 30px 0 30px;
+}
+
+/* line 278, ../sass/screen.scss */
+#aboutDesc h1 {
+  text-transform: uppercase;
+  font-family: "Bebas Neue Regular";
+  font-size: 28px;
+  letter-spacing: 4px;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+/* line 287, ../sass/screen.scss */
+#aboutDesc p {
+  font-family: "Raleway Regular";
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #fff;
+  line-height: 26px;
+  margin-bottom: 30px;
+}
+
+/* line 296, ../sass/screen.scss */
+#aboutDesc a {
+  font-family: "Raleway Regular";
+  font-size: 12px;
+  color: #fff;
+}
+
+/***************************************** 
+*			  Call To Action       	     * 
+******************************************/
+/* line 307, ../sass/screen.scss */
+#callToAction {
+  width: 100%;
+  height: 377px;
+  background-color: #fff;
+}
+
+/* line 313, ../sass/screen.scss */
+#callToAction h1 {
+  text-transform: uppercase;
+  font-family: "Raleway Regular";
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #6b6b6b;
+  margin-bottom: 30px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+/* line 325, ../sass/screen.scss */
+#callToAction p {
+  font-family: "Raleway Regular";
+  font-size: 15px;
+  color: #6b6b6b;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+/* line 333, ../sass/screen.scss */
+#callToAction button {
+  text-transform: uppercase;
+  font-family: "Raleway Regular";
+  font-size: 20px;
+  color: #fff;
+  display: block;
+  margin: auto;
+  border: none;
+  height: 55px;
+  width: 260px;
+  background-color: #65bf95;
+  text-align: center;
+  -webkit-transition: background-color 0.7s;
+  /* Safari 3.1 to 6.0 */
+  transition: background-color 0.7s;
+}
+
+/* line 349, ../sass/screen.scss */
+#callToAction button:hover {
+  background-color: #00c5ff;
+}
+
+/***************************************** 
+*			 	 Footer          	     * 
+******************************************/
+/* line 356, ../sass/screen.scss */
+footer {
+  width: 100%;
+  font-family: "Raleway Regular";
+  background-color: #f7f7f7;
+  color: #000;
+  height: 276px;
+  text-align: center;
+  bottom: 0;
+  position: relative;
+}
+
+/* line 367, ../sass/screen.scss */
+footer img {
+  margin: 100px 0 0 0;
+}
+
+/* line 370, ../sass/screen.scss */
+footer p {
+  margin: 25px 0;
+}

@@ -1,0 +1,69 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@charset "utf-8";
+
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
+	$src: null;
+
+	$extmods: (
+		eot: "?",
+		svg: "#" + str-replace($name, " ", "_")
+	);
+
+	$formats: (
+		otf: "opentype",
+		ttf: "truetype"
+	);
+
+	@each $ext in $exts {
+		$extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+		$format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+		$src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+	}
+
+	@font-face {
+		font-family: quote($name);
+		font-style: $style;
+		font-weight: $weight;
+		src: $src;
+	}
+}
+
+@include font-face("Bebas Neue Regular", "../fonts/BebasNeue Regular", null, null, otf);
+@include font-face("Raleway Regular", "../fonts/Raleway-Regular", null, null, ttf);
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+	background-color: transparent;
+	color: #00c5ff;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+    -webkit-transition: border 0.5s; /* Safari 3.1 to 6.0 */
+    transition: border 0.5s;	
+}
+
+.navbar-inverse .navbar-nav>li:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 5px;
+	width: 0px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+.navbar-inverse .navbar-nav>li:hover:after {
+	width: 100%;
+	background: #00c5ff;
+}
+.navbar{
+	border:none;
+}
+#title{
+	z-index: 1000;
+	position: fixed;
+	height: 100px;
+}
+
